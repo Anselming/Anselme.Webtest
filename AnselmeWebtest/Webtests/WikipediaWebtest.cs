@@ -33,7 +33,7 @@ namespace AnselmeWebtest.Webtests
         [InlineData(Browser.Firefox, "Flamengo")]
         [InlineData(Browser.Firefox, "Brasil")]
         [InlineData(Browser.Firefox, "Teste")]
-        public void SerchTestInWikipedia(Browser browser, string searchTerm)
+        public void SerachTestInWikipedia(Browser browser, string searchTerm)
         {
             using (WikipediaPageobject pageobject = new WikipediaPageobject(_configuration, browser, true))
             {

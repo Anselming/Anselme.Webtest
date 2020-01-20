@@ -24,11 +24,11 @@ namespace AnselmeWebtest.Structure
 
                 case Browser.Opera:
                     throw new NotImplementedException();
-                    break;
+                    
 
                 case Browser.InternetExplorer:
                     throw new NotImplementedException();
-                    break;
+                    
 
                 case Browser.Chrome:
                     if (options == null) options = new ChromeOptions();
@@ -44,15 +44,15 @@ namespace AnselmeWebtest.Structure
 
                 case Browser.Safari:
                     throw new NotImplementedException();
-                    break;
+                    
 
                 case Browser.Brave:
                     throw new NotImplementedException();
-                    break;
+                    
 
                 default:
                     throw new NotImplementedException();
-                    break;
+                    
             }
 
             return webDriver;
