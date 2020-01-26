@@ -15,11 +15,14 @@ namespace AnselmeWebtest.Pageobjects
         {
         }
 
+
         public void ChangeHello(string inputText)
         {
+	    // Set data on input that changes hello message
             By inputSearch = By.CssSelector(".ng-pristine:nth-child(2)");
             Driver.SetText(inputSearch, inputText);
 
+	    // Get hello message after changes by this method
             By helloLocation = By.XPath("//div[2]/div/h1");
             WebDriverWait wait = new WebDriverWait(Driver, TimeSpan.FromSeconds(Timeout));
             wait.Until(d => d.FindElement(helloLocation) != null);
