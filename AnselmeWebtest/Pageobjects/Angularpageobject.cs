@@ -22,12 +22,13 @@ namespace AnselmeWebtest.Pageobjects
             By inputSearch = By.CssSelector(".ng-pristine:nth-child(2)");
             Driver.SetText(inputSearch, inputText);
 
-	    // Get hello message after changes by this method
+	    // Get hello message after changes by this method to verify if it happens correctly
             By helloLocation = By.XPath("//div[2]/div/h1");
             WebDriverWait wait = new WebDriverWait(Driver, TimeSpan.FromSeconds(Timeout));
             wait.Until(d => d.FindElement(helloLocation) != null);
         }
 
+        // Method that returns the Hello message
         public string GetHello()
         {
             By hello = By.XPath("//div[2]/div/h1");
