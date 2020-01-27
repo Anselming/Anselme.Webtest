@@ -6,6 +6,8 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
+// Teste de comentário 2
+
 namespace AnselmeWebtest.Pageobjects
 {
     internal class AngularPageobject : Pageobject
